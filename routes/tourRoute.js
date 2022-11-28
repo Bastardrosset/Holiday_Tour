@@ -12,7 +12,7 @@ router
 router
     .route('/:id')
     .get(tourController.getATour)
-    .patch(tourController.modifyTour)
+    .patch(tourController.updateTour)
     .delete(tourController.deleteTour);
 
 
