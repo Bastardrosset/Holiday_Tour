@@ -12,11 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.3",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsx-a11y": "^6.6.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-react": "^7.31.11",
     "express": "^4.18.2",
     "global": "^4.4.0",
     "mongoose": "^6.7.3",
@@ -26,8 +21,22 @@
     "validator": "^13.7.0"
   },
   "devDependencies": {
-    "eslint-plugin-jsx": "^0.1.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.8.0"
-  }
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "prettier": "^1.17.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bastardrosset/Holiday_Tour.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Bastardrosset/Holiday_Tour/issues"
+  },
+  "homepage": "https://github.com/Bastardrosset/Holiday_Tour#readme"
 }
