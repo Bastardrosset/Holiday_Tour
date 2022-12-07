@@ -4,12 +4,12 @@ const morgan = require('morgan');
 
 const AppError = require('./utils/appError');
 const globalErrorHandler = require('./controllers/errorController');
-const tourRouter = require("./routes/tourRoute");
-const userRouter = require("./routes/userRoute");
+const tourRouter = require('./routes/tourRoute');
+const userRouter = require('./routes/userRoute');
 
 
 //Middleware
-if (process.env.NODE_ENV === "developpement") {
+if (process.env.NODE_ENV === 'developpement') {
     app.use(morgan('dev'));
 }
 app.use(express.json());
@@ -17,12 +17,13 @@ app.use(express.static(`${__dirname}/public`));
 
 app.use((req, res, next) => {
     req.requestTime = new Date().toISOString();
+    // console.log(req.headers)
     next();
 });
 
 
-app.use("/api/v1/tours", tourRouter);
-app.use("/api/v1/users", userRouter);
+app.use('/api/v1/tours', tourRouter);
+app.use('/api/v1/users', userRouter);
 
 
 app.all('*', (req, res, next) => {
