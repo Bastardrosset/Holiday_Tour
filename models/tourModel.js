@@ -109,7 +109,7 @@ tourSchema.post(/^find/, function (doc, next) {
 });
 
 //Aggregation middleware
-tourSchema.pre('aggregate', function () {
+tourSchema.pre('aggregate', function (next) {
     this.pipeline().unshift({
         $match: {
             secretTour: {
@@ -118,7 +118,7 @@ tourSchema.pre('aggregate', function () {
         }
     });
     next();
-})
+});
 const Tour = mongoose.model('Tour', tourSchema);
 
 module.exports = Tour;
