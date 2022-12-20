@@ -10,6 +10,7 @@ module.exports.aliasTopTours = (req, res, next) => {
   req.query.fields = 'name,price,ratingsAverage,summary,difficulty';
   next();
 };
+
 module.exports.getAllTours = factory.getAll(Tour);
 module.exports.getATour = factory.getOne(Tour, { path: 'reviews' });
 module.exports.createTour = factory.createOne(Tour);
@@ -44,6 +45,7 @@ module.exports.getTourStats = catchAsync(async (req, res, next) => {
         }
     });
 });
+
 module.exports.getMonthlyPlan = catchAsync(async (req, res, next) => {
     const year = req.params.year * 1; // 2021
 
