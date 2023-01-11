@@ -1,6 +1,6 @@
 /* eslint-disable */
 
-import { login } from './login';
+import { login, logout } from './login';
 import { signup } from './signup';
 
 // DOM elements

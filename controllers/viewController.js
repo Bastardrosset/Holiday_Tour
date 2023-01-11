@@ -55,7 +55,7 @@ module.exports.getSignUpForm = (req, res) => {
         "connect-src 'self' https://cdnjs.cloudflare.com"
       )
     .render('signup', {
-        title: `Create New Account`,
+        title: `Create New Account`
     });
 };
 
